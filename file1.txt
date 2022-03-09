@@ -1,0 +1,4 @@
+user1        AA
+user2	     FS
+user3	     RS
+user4	     BS
