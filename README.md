@@ -25,7 +25,9 @@ In case you're getting errors such as $'\r' command not found, you'll have to co
 
 1) If you're on linux or windows subsystem, this can be done via:
 
+```
 sed -i 's/\r$//' script.sh
+```
 
 (replace the script.sh with your own file name)
 
