@@ -1,9 +1,14 @@
+/**
+    @author Nadia Goralski
+ */
+
 import java.util.Stack;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.*;
 
+// Note that you don't need a main method in order for JUnit to run
 public class StackTest {
 
     @Test
@@ -27,5 +32,11 @@ public class StackTest {
             assertEquals(numbers[i], testStack.get(i), String.format("Top of the stack should be %d", numbers[i]));
             assertEquals(expectedStackSize, testStack.size(), String.format("Stack size should be %d", expectedStackSize));
         }
+
+        // at the end of the for loop, the stack should be populated. We can test that by using:
+        assertFalse(testStack.empty(), "Stack should not be empty");
+
+        // demo below for failed test
+        // assertEquals(3, testStack.size(), "Stack should have the size of 4");
     }
 }
