@@ -15,11 +15,15 @@ This is a basic java class that does the following:
 ## Running the script file
 If you're on linux or windows subsystem, you can use:
 
+```
 ./script.sh
+```
 
 On windows, just add bash in front and remove the ./:
 
+```
 bash script.sh
+```
 
 In case you're getting errors such as $'\r' command not found, you'll have to convert the text from dos-based to unix-based. Here are two ways to fix this:
 
@@ -32,12 +36,12 @@ sed -i 's/\r$//' script.sh
 (replace the script.sh with your own file name)
 
 2) Use notepad++
-	i) go to search -> find in files
-	ii) directory -> working directory
-	iii) find what = \r\n
-	iv) replace with =\n
-	v) search mode = extended
-	vi) click "Replace in Files"
+	1. go to search -> find in files
+	2. directory -> working directory
+	3. find what = \r\n
+	4. replace with =\n
+	5. search mode = extended
+	6. click "Replace in Files"
 
 	StackOverflow link for reference: 
 	https://stackoverflow.com/questions/20368781/anything-like-dos2unix-for-windows\
